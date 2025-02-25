@@ -1,0 +1,26 @@
+cd
+pwd
+cd ~/.ssh
+pwd
+ssh-keygen
+ls
+cat sundar270.pub
+ssh -i ~/.ssh/sundar270 -T git@github.com
+export GIT_SSH_command="ssh -i ~/.ssh/sundar270"
+mkdir ~/actions
+cd actions
+git clone git@github.com:sundar270/hprofile_gitactions.git
+ll
+cd hprofile_gitactions
+ll
+unset GIT_SSH_COMMAND
+git config core.sshCommand "ssh -i ~/.ssh/sundar270 -F /dev/null"
+cat .git/config
+git config user.name sundar270
+git config user.email d.s.anand07@gmail.com
+cat .git/config
+
+fb2fffbabc546c4b1a05890c2c088eac9e6bfd95
+sundar270
+githubactions
+https://sonarcloud.io
